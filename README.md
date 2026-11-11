@@ -13,7 +13,8 @@ https://bohdan7563.github.io/landing-keepsake/
 - CSS3: Flexbox, адаптивні media queries та CSS custom properties.
 - Google Fonts: Oswald, Open Sans, Dancing Script.
 - Inline SVG для іконок.
-- Невеликий JavaScript для доступного мобільного меню (кнопка з `aria-expanded` та `aria-controls`).
+- CSS-only мобільне меню на основі нативного елемента `<details>`.
+- CSS-only фільтри портфоліо та кнопка розгортання робіт.
 
 ## Адаптивність
 
