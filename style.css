@@ -1479,3 +1479,8 @@ ul {
 #show-all-works:checked ~ .works-grid .work-card:nth-child(n) {
   display: block;
 }
+
+#show-all-works:focus-visible ~ .load-more .btn-load-more {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+}
