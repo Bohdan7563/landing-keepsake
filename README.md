@@ -4,7 +4,7 @@
 
 ## Demo
 
-Після ввімкнення GitHub Pages сайт буде доступний за адресою:
+Демо:
 https://bohdan7563.github.io/landing-keepsake/
 
 ## Технології
