@@ -10,10 +10,10 @@ https://bohdan7563.github.io/landing-keepsake/
 ## Технології
 
 - HTML5 із семантичною структурою.
-- CSS3: Flexbox, адаптивні media queries та CSS custom properties.
+- CSS3: Flexbox для основних компонувань, CSS Grid лише для сітки портфоліо, адаптивні media queries та CSS custom properties.
 - Google Fonts: Oswald, Open Sans, Dancing Script.
 - Inline SVG для іконок.
-- CSS-only мобільне меню на основі нативного елемента `<details>`.
+- Мобільне меню без JavaScript на основі нативного disclosure-елемента `<details>/<summary>`.
 - CSS-only фільтри портфоліо та кнопка розгортання робіт.
 
 ## Адаптивність
@@ -26,4 +26,4 @@ https://bohdan7563.github.io/landing-keepsake/
 
 ## Примітка щодо зображень
 
-Усі 13 зображень збережені в папці `images/` цього репозиторію та підключені локальними шляхами. Сайт більше не залежить від файлів у репозиторії `web-technologies`.
+Усі зображення збережені в папці `images/` цього репозиторію та підключені локальними шляхами. Сайт більше не залежить від файлів у репозиторії `web-technologies`.
