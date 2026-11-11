@@ -832,9 +832,14 @@ ul {
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px 24px;
+}
+
+.service-card {
+  flex: 1 1 calc(50% - 12px);
+  min-width: 0;
 }
 
 .service-card {
@@ -875,19 +880,20 @@ ul {
 }
 
 @media (min-width: 1280px) {
-  .services-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .service-card {
+    flex-basis: calc(25% - 18px);
   }
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
 
 .stat-item {
+  flex: 0 0 50%;
   padding: 24px 0;
   text-align: center;
 }
@@ -912,8 +918,8 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .stat-item {
+    flex-basis: 25%;
   }
 
   .stat-number {
@@ -930,12 +936,13 @@ ul {
 }
 
 .client-logos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .client-logo {
   display: flex;
+  flex: 0 0 50%;
   align-items: center;
   justify-content: center;
   height: 72px;
@@ -1056,8 +1063,8 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .client-logos {
-    grid-template-columns: repeat(3, 1fr);
+  .client-logo {
+    flex-basis: 33.333%;
   }
 
   .testimonial {
@@ -1070,8 +1077,8 @@ ul {
 }
 
 @media (min-width: 1280px) {
-  .client-logos {
-    grid-template-columns: repeat(6, 1fr);
+  .client-logo {
+    flex-basis: 16.666%;
   }
 
   .testimonial-text {
@@ -1166,9 +1173,13 @@ ul {
 
 @media (min-width: 1280px) {
   .journal-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 40px;
+  }
+
+  .journal-card {
+    flex: 0 0 calc(50% - 20px);
   }
 }
 
