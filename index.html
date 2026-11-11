@@ -63,23 +63,18 @@
           <span class="logo-text" aria-hidden="true">eepsake</span>
         </a>
 
-        <input
-          type="checkbox"
-          class="menu-toggle-input"
-          id="menu-toggle"
-          aria-label="Toggle navigation menu"
-        />
-        <label class="burger-btn" for="menu-toggle">
-          <svg class="icon-burger" width="22" height="16" viewBox="0 0 22 16" fill="currentColor" aria-hidden="true">
-            <rect y="0" width="22" height="2" />
-            <rect y="7" width="22" height="2" />
-            <rect y="14" width="22" height="2" />
-          </svg>
-          <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M3 3l16 16M19 3L3 19" />
-          </svg>
-        </label>
-<nav class="nav" id="main-nav" aria-label="Main">
+        <details class="nav-disclosure">
+          <summary class="burger-btn" aria-label="Toggle navigation menu" aria-controls="main-nav">
+            <svg class="icon-burger" width="22" height="16" viewBox="0 0 22 16" fill="currentColor" aria-hidden="true">
+              <rect y="0" width="22" height="2" />
+              <rect y="7" width="22" height="2" />
+              <rect y="14" width="22" height="2" />
+            </svg>
+            <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M3 3l16 16M19 3L3 19" />
+            </svg>
+          </summary>
+          <nav class="nav" id="main-nav" aria-label="Main">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#top" class="nav-link active" aria-current="page"
@@ -131,7 +126,8 @@
               >p</a
             >
           </div>
-        </nav>
+          </nav>
+        </details>
       </div>
     </header>
 
