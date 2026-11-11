@@ -698,7 +698,7 @@
                 <input
                   type="email"
                   id="newsletter-email"
-                      class="input-field"
+                  class="input-field"
                   placeholder="Your email address"
                   required
                   aria-describedby="email-error"
@@ -715,12 +715,16 @@
                   type="checkbox"
                   id="consent-check"
                   class="consent-checkbox"
+                  aria-describedby="consent-error"
                   required
                 />
                 <label for="consent-check" class="consent-text"
                   >I agree to the privacy policy</label
                 >
               </div>
+              <p class="field-error consent-error" id="consent-error">
+                Please confirm the privacy policy.
+              </p>
             </form>
 
             <p class="newsletter-success" id="newsletter-success" role="status">
